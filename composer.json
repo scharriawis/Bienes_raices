@@ -1,0 +1,26 @@
+{
+    "name": "usuario/htdocs",
+    "description": "Creando un proyecto con POO",
+    "autoload": {
+        "psr-4": {
+            "Usuario\\Htdocs\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "lauradmw",
+            "email": "lauradmw1@gmail.com"
+        }
+    ],
+    "require": {
+        "intervention/image": "^2.7",
+        "phpmailer/phpmailer": "^6.8"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Model\\" : "./models",
+            "MVC\\" : "./",
+            "Controller\\" : "./controller" 
+        }
+    }
+}
