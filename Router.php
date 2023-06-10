@@ -28,19 +28,20 @@ class Router{
              '/vendedores/crear', '/vendedores/actualizar', '/vendedores/eliminar'];
 
         //toma el valor actual de la url del servidor
-        $currentUrl = strtok($_SERVER['REQUEST_URI'], '?') ?? '/';        //\debuguear($_SERVER);
+        $urlActual = strtok($_SERVER['REQUEST_URI'], '?') ?? '/';;
+        //\debuguear($_SERVER);
 
         //alamacena el método get o post. del servidor
         $method = $_SERVER['REQUEST_METHOD'];
 
         //Identifica el metodo
         if($method === 'GET'){
-            $fn = $this->rutasGET[$currentUrl] ?? null;
+            $fn = $this->rutasGET[$urlActual] ?? null;
         }else{
-            $fn = $this->rutasPOST[$currentUrl] ?? null;
+            $fn = $this->rutasPOST[$urlActual] ?? null;
         }
 
-        if(in_array($currentUrl, $rutasProtegidas) && !$auth){
+        if(in_array($urlActual, $rutasProtegidas) && !$auth){
             header('Location: /');
         }
 
