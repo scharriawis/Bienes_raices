@@ -1,6 +1,11 @@
 /vendor/
 /node_modules/
 /src/
+bienesraices_crud.sql
+gulpfile.js
+package-lock.json
+package.json
+.DS_Store
 .env
 .env.local
 .env.development
