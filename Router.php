@@ -28,7 +28,7 @@ class Router{
              '/vendedores/crear', '/vendedores/actualizar', '/vendedores/eliminar'];
 
         //toma el valor actual de la url del servidor
-        $urlActual = strtok($_SERVER['REQUEST_URI'], '?') ?? '/';;
+        $urlActual = strtok($_SERVER['REQUEST_URI'], '?') ?? '/';
         //\debuguear($_SERVER);
 
         //alamacena el método get o post. del servidor
