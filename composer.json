@@ -8,12 +8,13 @@
     },
     "authors": [
         {
-            "name": "lauradmw",
-            "email": "lauradmw1@gmail.com"
+            "name": "scharriawis",
+            "email": "scharriawis@gmail.com"
         }
     ],
     "require": {
         "php": "^8.1.11",
+        "composer": "^2.4",
         "intervention/image": "^2.7",
         "phpmailer/phpmailer": "^6.8",
         "vlucas/phpdotenv": "^5.5",
