@@ -1,7 +1,6 @@
 /vendor/
 /node_modules/
 /src/
-bienesraices_crud.sql
 gulpfile.js
 package-lock.json
 package.json
